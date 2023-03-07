@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Sinh Viên</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sinh viên</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+<style>
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+<body> 
+    <div class="list_student">
+        <h1>Danh sách sinh viên</h1>
+        <div class="box_search">
+            <label for="txtTuKhoa">Từ Khóa</label>
+            <input type="text" id="searchInput"  placeholder="Từ khóa cần tìm">
+            <button class="btn_search" onclick="SearchDataStudent()">Tìm Kiếm</button>
+        </div>
+        <div class="result">
+            <table id="table">
+                <tr>
+                    <th></th>
+                    <th>Mã SV</th>
+                    <th>Tên Sinh Viên</th>
+                    <th>Ngày Sinh</th>
+                    <th>Giới Tính</th>
+                    <th>Tên Khoa</th>
+                    <th>Mã Khoa</th>
+                    <th>
+                        <i class="fa-solid fa-wrench"></i>
+                        <i class="fa-sharp fa-solid fa-trash"></i>
+                    </th>
+                </tr>
+       
+              </table>
+        </div>
+    </div>
+    <!-- Nhập thông tin -->
+    <br><br><br>
+    <div class="input_box">
+        <div class="input_info">
+            <div>
+                <button id="addNew" class="addNew" onclick="addNew()">Thêm Mới</button>
+                <button id="update" class="update" onclick="CapNhatSinhVien()">Cập Nhật</button>
+                <button onclick="DeleteAllStudent()" class="delete">Xóa</button>
+            </div>
+            <div>
+                <label for="txtMaSV">Mã SV <span style="color:red">(*)</span></label>
+                <input type="text" id="txtMaSV">
+            </div>
+            <div>
+                <label for="txtTenSV">Tên SV <span style="color:red">(*)</span></label>
+                <input type="text" id="txtTenSV">
+            </div>
+            <div>
+                <label for="txtNgaySinh">Ngày Sinh</label>
+                <input type="date" id="txtNgaySinh">
+            </div>
+            <div>
+                <label for="rdbGioiTinh">Giới Tính:</label>
+                <div>
+                    <label for="male">Nam</label>
+                    <input type="radio" id="male"  name="gender" value="Nam">
+                    <label for="female">Nữ</label>
+                    <input type="radio" id="female"  name="gender" value="Nữ">
+                </div>
+            </div>
+            <div>
+                <label>Tên Khoa<span style="color:red">(*)</span></label>
+                <input type="text" id="drpKhoa">
+                <label>Mã Khoa<span style="color:red">(*)</span></label>
+                <input type="text" id="drpMaKhoa">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js">
+</script>
+</html>
+
+    </div>
+</body>
+</html>
